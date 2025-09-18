@@ -36,7 +36,7 @@ Replace,
  - COINBASE -> Wallet Address
  - VALIDATOR_PRIVATE_KEY -> Wallet Private Key
 ```bash
-docker run -d -v .:/data/sequencer -e  ETHEREUM_HOSTS=http://XXXXXXXXX -e L1_CONSENSUS_HOST_URLS=http://XXXXXXXXX -e COINBASE=0xXXXXXXXXXXXXXX -e VALIDATOR_PRIVATE_KEY=XXXXXXXXXXXXXXXXXXXXXXXXX -p 8080:8080 -p 40400:40400 -p 40400:40400/udp nodefarmer/aztec:1.4_2.0.2
+docker run -d -v .:/data/sequencer -e  ETHEREUM_HOSTS=http://XXXXXXXXX -e L1_CONSENSUS_HOST_URLS=http://XXXXXXXXX -e COINBASE=0xXXXXXXXXXXXXXX -e VALIDATOR_PRIVATE_KEY=XXXXXXXXXXXXXXXXXXXXXXXXX -p 8080:8080 -p 40400:40400 -p 40400:40400/udp nodefarmer/aztec:1.5_2.0.2
 ```
 ## In case new update
  - Remove Docker
