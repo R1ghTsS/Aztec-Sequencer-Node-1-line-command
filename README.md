@@ -29,14 +29,14 @@ sudo docker run hello-world
 sudo systemctl enable docker
 sudo systemctl restart docker
 ```
-## Install Aztec (v 2.0.2)
+## Install Aztec (v 2.0.4)
 Replace,
  - ETHEREUM_HOSTS -> Eth RPC
  - L1_CONSENSUS_HOST_URLS -> Beacon RPC
  - COINBASE -> Wallet Address
  - VALIDATOR_PRIVATE_KEY -> Wallet Private Key
 ```bash
-docker run -d -v .:/data/sequencer -e  ETHEREUM_HOSTS=http://XXXXXXXXX -e L1_CONSENSUS_HOST_URLS=http://XXXXXXXXX -e COINBASE=0xXXXXXXXXXXXXXX -e VALIDATOR_PRIVATE_KEY=XXXXXXXXXXXXXXXXXXXXXXXXX -p 8080:8080 -p 40400:40400 -p 40400:40400/udp nodefarmer/aztec:1.5_2.0.2
+docker run -d -v .:/data/sequencer -e  ETHEREUM_HOSTS=http://XXXXXXXXX -e L1_CONSENSUS_HOST_URLS=http://XXXXXXXXX -e COINBASE=0xXXXXXXXXXXXXXX -e VALIDATOR_PRIVATE_KEY=XXXXXXXXXXXXXXXXXXXXXXXXX -p 8080:8080 -p 40400:40400 -p 40400:40400/udp nodefarmer/aztec:1.6_2.0.4
 ```
 ## In case new update
  - Remove Docker
